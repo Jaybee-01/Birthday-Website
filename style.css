@@ -1,0 +1,937 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: "Montserrat Alternates", serif;
+}
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Nav bar section */
+header {
+  background: #fff7f6cc;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 3;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  max-width: 1100px;
+}
+.logo img {
+  width: 70px;
+}
+.nav1 {
+  gap: 60px;
+}
+#span {
+  color: #9f34a3;
+}
+ul {
+  display: flex;
+  list-style-type: none;
+}
+li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  font-style: normal;
+}
+/* for the mobile Hamburger menu NOTE: only for Mobile view this code works*/
+.none {
+  display: none;
+}
+#menu-toggle {
+  font-size: 20px;
+  cursor: pointer;
+  display: none;
+}
+.menu-icon {
+  font-size: 22px;
+  cursor: pointer;
+}
+.menu-icon .fa-bars {
+  display: block;
+}
+.menu-icon .fa-times {
+  display: none;
+}
+#menu-toggle:checked + .menu-icon .fa-bars {
+  display: none;
+}
+#menu-toggle:checked + .menu-icon .fa-times {
+  display: block;
+}
+/* Navigation links Menu for the Hamburger */
+.nav-links {
+  list-style: none;
+}
+
+.nav-links li {
+  margin: 0 15px;
+  padding: 10px 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+main {
+  margin-top: 72px;
+}
+
+/* Happy birthday Section */
+.sec-1 {
+  display: flex;
+  overflow: hidden;
+  margin-top: 60px;
+}
+
+/* Arrow lines */
+.g-13 {
+  width: 200px;
+  position: absolute;
+  top: 160px;
+}
+.v-3 {
+  position: absolute;
+  top: 210px;
+  left: 600px;
+  width: 200px;
+}
+.v-2 {
+  position: absolute;
+  top: 340px;
+  left: 365px;
+  width: 260px;
+}
+.g-11 {
+  position: absolute;
+  top: 560px;
+  left: 105px;
+  width: 460px;
+}
+.g-18 {
+  position: absolute;
+  top: 780px;
+  right: 1px;
+  width: 360px;
+}
+.g-26 {
+  position: absolute;
+  left: 0;
+  top: 220px;
+  width: 265px;
+}
+.g-27 {
+  position: absolute;
+  right: 0;
+  top: 190px;
+  width: 265px;
+}
+/* End of all the arrows */
+
+.sec-11 {
+  position: relative;
+  top: 180px;
+  width: 55%;
+  margin-left: 70px;
+}
+.sec-11 h1 {
+  font-size: 50px;
+  font-weight: 800;
+}
+.sec-11 p {
+  font-size: 35px;
+  font-weight: 300;
+}
+span {
+  color: #fee148;
+}
+.btn-1 {
+  width: 200px;
+  height: 40px;
+  margin-top: 10px;
+  color: black;
+  background-color: white;
+  border: 2px solid;
+  border-color: #fee148 #9f34a3 #9f34a3 #fee148;
+  border-radius: 20px;
+}
+.btn-1 a {
+  text-decoration: none;
+  color: black;
+}
+.sec-12 {
+  position: relative;
+  top: -200px;
+  margin: auto;
+}
+/* Styles for the MoveUpDown Rectangles */
+.container1 {
+  position: relative;
+  height: 100vh;
+  left: 530px;
+}
+.rectangle {
+  height: 10px;
+  width: 35px;
+  display: inline-block;
+  margin: 3px;
+  animation: moveUpDown 2s ease-in-out infinite;
+}
+
+.yellow {
+  background-color: yellow;
+  animation-delay: 0s;
+}
+.purple {
+  background-color: purple;
+  animation-delay: 0.5s;
+}
+.red {
+  background-color: red;
+  animation-delay: 1s;
+}
+
+@keyframes moveUpDown {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(15px);
+  }
+}
+.mg-1 {
+  border: 3px solid rgb(226, 206, 206);
+  border-radius: 50px;
+  height: 300px;
+  width: 220px;
+  position: absolute;
+  top: 50%;
+  right: -100px;
+  transform: translateY(-50%);
+  z-index: 2;
+  background-size: cover;
+}
+
+/* Style for the animated border image */
+.animated-border-image {
+  animation: changeBorderColor 3s infinite; /* Apply the animation */
+}
+
+@keyframes changeBorderColor {
+  0% {
+    border-color: red;
+  }
+  30% {
+    border-color: purple;
+  }
+  60% {
+    border-color: yellow;
+  }
+  100% {
+    border-color: red;
+  }
+}
+.mg-2 {
+  border: 3px solid rgb(226, 206, 206);
+  border-radius: 50px;
+  height: 300px;
+  width: 220px;
+  position: absolute;
+  top: -134px;
+  left: -64px;
+  transform: scaleX(-1) rotate(-20deg);
+  z-index: 1;
+  height: 250px;
+  width: 200px;
+  background-size: cover;
+}
+.mg-3 {
+  border: 3px solid rgb(226, 206, 206);
+  border-radius: 50px;
+  height: 300px;
+  width: 220px;
+  position: absolute;
+  top: -6px;
+  right: -38px;
+  transform: translateY(-50%) rotate(-20deg);
+  z-index: 1;
+  height: 277px;
+  width: 200px;
+  background-size: cover;
+}
+
+.mg-4 {
+  position: absolute;
+  top: -200px;
+  right: 105px;
+  border: none;
+  width: 150px;
+  height: auto;
+  transform: translateY(-0%) rotate(-20deg);
+  background-size: cover;
+}
+.mg-5 {
+  position: absolute;
+  top: 25px;
+  right: 45px;
+  border: none;
+  width: 120px;
+  height: auto;
+  transform: translateY(-0%) rotate(-160deg);
+  background-size: cover;
+}
+/* Style to make the animation of the flower */
+.animated-image {
+  width: 150px;
+  height: auto;
+  animation: changeFlowerColor 4s infinite;
+}
+
+@keyframes changeFlowerColor {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  25% {
+    filter: hue-rotate(90deg);
+  }
+  50% {
+    filter: hue-rotate(180deg);
+  }
+  75% {
+    filter: hue-rotate(270deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+.animated-image1 {
+  width: 150px;
+  height: auto;
+  animation: changeFlowerColor1 4s infinite;
+}
+
+@keyframes changeFlowerColor1 {
+  0% {
+    filter: hue-rotate(0deg);
+    transform: translateY(-0%) rotate(-40deg);
+  }
+  25% {
+    filter: hue-rotate(90deg);
+
+  }
+  50% {
+    filter: hue-rotate(180deg);
+    transform: rotate(-20deg);
+  }
+  75% {
+    filter: hue-rotate(270deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+    transform: rotate(-40deg);
+  }
+}
+.animated-image2 {
+  width: 150px;
+  height: auto;
+  animation: changeFlowerColor2 4s infinite;
+}
+
+@keyframes changeFlowerColor2 {
+  0% {
+    filter: hue-rotate(0deg);
+    transform: translateY(-0%) rotate(-160deg);
+  }
+  25% {
+    filter: hue-rotate(90deg);
+
+  }
+  50% {
+    filter: hue-rotate(180deg);
+    transform: rotate(-140deg);
+  }
+  75% {
+    filter: hue-rotate(270deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+    transform: rotate(-160deg);
+  }
+}
+
+
+.txt-1 {
+  width: 350px;
+  height: 50px;
+  backdrop-filter: blur(-200px);
+  background: #fff7f6cc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 74px;
+  right: -160px;
+  opacity: 0.9;
+  z-index: 3;
+  font-weight: 700;
+}
+/* Styles for the Rounded Container */
+.rounded-container {
+  position: absolute;
+  right: -500px;
+  top: -115px;
+  background: linear-gradient(
+    151.39deg,
+    rgba(254, 225, 72, 0.8) 0%,
+    rgba(159, 52, 163, 0.8) 100%
+  );
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  filter: blur(30px);
+}
+
+/* For the Oval Container */
+.oval-container {
+  position: absolute;
+  top: -165px;
+  right: -55px;
+  z-index: -1;
+  background: linear-gradient(
+    151.39deg,
+    rgba(254, 225, 72, 0.8) 0%,
+    rgba(159, 52, 163, 0.8) 100%
+  );
+  width: 385px;
+  height: 300px;
+  border-radius: 50%;
+
+  filter: blur(30px);
+  transform: rotate(60deg);
+}
+.Just-txt {
+  display: none;
+}
+/* About Me and Message From Dad Style */
+.sec-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  font-family: Montserrat Alternates;
+  margin-top: -250px;
+}
+.main-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.image-container img {
+  width: 80%;
+  height: auto;
+  max-width: 450px;
+  border-radius: 40px;
+  border-left: 2px solid #fee148;
+  border-top: 2px solid #fee148;
+  border-right: 2px solid #9f34a3;
+  border-bottom: 2px solid #9f34a3;
+}
+.cont1 {
+  position: relative;
+  top: -20px;
+  left: -30px;
+}
+.cont2 {
+  position: relative;
+  top: 18px;
+  left: 280px;
+}
+.text-container {
+  /* width: 80%;    You can use this also but flex is better*/
+  flex: 1; /* This will allow this div to take up available space */
+  padding-left: 20px;
+  text-align: justify;
+}
+
+.text-container h2 {
+  font-size: 19px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.text-container p {
+  font-size: 17px;
+  color: black;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+/* This is the Style for the SEE ME LOOKING ALL CUTE */
+.sec-3-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  z-index: 3;
+}
+.sec3-1-txt {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 50%;
+}
+.sec-3-1 h2 {
+  text-align: center;
+  font-family: Montserrat Alternates;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 48.76px;
+}
+.sec-3-1 p {
+  font-family: Montserrat Alternates;
+  font-weight: 400;
+  font-size: 19px;
+  text-align: center;
+}
+
+/* Style for Flower by the Left */
+.sec3-1-img1 {
+  position: absolute;
+  border: none;
+  left: -80px;
+  width: 200px;
+  height: auto;
+  transform: translateY(-0%) rotate(51deg);
+}
+/* Style for Flower by the Right */
+.sec3-1-img2 {
+  position: absolute;
+  border: none;
+  right: -85px;
+  width: 200px;
+  height: auto;
+  transform: translateY(-0%) rotate(-51deg);
+}
+
+/* This Style is for the Gallery for the Images No 1 and 2 */
+.sec-4-1 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sec-4-1 img {
+  border: 5px solid #d0b0cf;
+  border-radius: 30px;
+  margin: 10px;
+  background-size: cover;
+  object-fit: cover;
+}
+
+/* Style for Wanna Sponsor the Party!? */
+.sec-5 {
+  position: relative;
+  height: 450px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.sec-5-img1 {
+  position: absolute;
+  border: none;
+  left: -100px;
+  width: 200px;
+  height: auto;
+  transform: translateY(-0%) rotate(-230deg);
+}
+
+.sec-5-img2 {
+  position: absolute;
+  border: none;
+  right: -100px;
+  width: 200px;
+  height: auto;
+  transform: translateY(-0%) rotate(230deg);
+}
+
+.sec-5-txt {
+  font-family: Montserrat Alternates;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 50%;
+  text-align: center;
+  font-size: 20px;
+}
+
+.btn-2 {
+  width: 200px;
+  height: 40px;
+  margin: 30px;
+  color: white;
+  background-color: black;
+  border: none;
+  border-radius: 20px;
+  text-align: center;
+}
+
+/* Style for the Horizontal Rule */
+.sec-6 {
+  position: relative;
+  top: -200px;
+  height: 240px;
+  overflow: hidden;
+}
+.sec-6-img1 {
+  position: absolute;
+  border: none;
+  left: -86px;
+  width: 155px;
+  transform: translateY(-0%) rotate(-230deg);
+  z-index: 1;
+}
+.ruler {
+  position: absolute;
+  top: 145px;
+  width: 100%;
+  height: 6px;
+  background-color: black;
+}
+
+.sec-6-img2 {
+  position: absolute;
+  border: none;
+  right: -86px;
+  width: 155px;
+  transform: translateY(-0%) rotate(230deg);
+}
+/* Style for Wanna Come for My Party */
+.sec-7 {
+  display: flex;
+  max-width: 1200px;
+  margin: auto;
+  margin-top: -240px;
+}
+.mg-7 {
+  width: 480px;
+  height: 309px;
+  border-radius: 60px;
+}
+.sec-7-txt {
+  font-family: Montserrat Alternates;
+  font-weight: 300;
+  font-size: 18px;
+  letter-spacing: 0%;
+  text-align: justify;
+  margin: 80px 20px;
+}
+
+.btn-3 {
+  width: 200px;
+  height: 40px;
+  margin-top: 30px;
+  color: white;
+  background-color: black;
+  border: none;
+  border-radius: 20px;
+  text-align: center;
+}
+/* Scroll to top button */
+.btn-4 {
+  width: 50px;
+  height: 45px;
+  color: white;
+  background-color: black;
+  border: none;
+  border-radius: 100%;
+  float: right;
+  text-align: center;
+}
+.btn-4:hover {
+  color: white;
+  background-color: black;
+  cursor: pointer;
+}
+
+/* Style for the Footer */
+footer {
+  display: flex;
+  height: 50px;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: black;
+}
+
+/* Responsiveness for extra small devices */
+@media (max-width: 650px) {
+  .g-13,
+  .v-3,
+  .v-2, 
+  .g-11, 
+  .g-18,
+  .g-26,
+  .g-27 {
+    display: none;
+  }
+  .logo {
+    position: relative;
+    right: 2px;
+  }
+  #logo {
+    margin-left: 30px;
+  }
+  .none {
+    display: block;
+  }
+
+  /* Styles for the Hamburger */
+  .nav-links {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    background: #0a0a0a;
+    flex-direction: column;
+    display: none;
+    text-align: center;
+    height: auto;
+  }
+
+  .nav-links li {
+    margin: 15px 0;
+  }
+  .nav-links li a {
+    color: white;
+  }
+
+  #menu-toggle:checked ~ .nav-links {
+    display: block;
+  }
+  /* Happy birday section */
+  .sec-1 {
+    display: block;
+    overflow: hidden;
+    margin: auto;
+    margin-top: -120px;
+
+  }
+  .sec-11 {
+    text-align: center;
+    margin: auto;
+    width: 400px;
+    height: 750px;
+  }
+  .sec-11 h1{
+    text-align: center;
+    margin: auto;
+    font-size: 30px;
+    max-width: 300px;
+  }
+  .sec-11 p{
+    text-align: center;
+    margin: auto;
+    font-size: 30px;
+    max-width: 300px;
+  }
+  .sec-12 {
+    margin-top: 100px;
+  }
+  .mg-1 {
+    position: relative;
+    margin: auto;
+  }
+  .Just-txt {
+    display: block;
+    width: 300px;
+    text-align: center;
+    font-size: 30px;
+    margin: auto;
+    margin-top: -250px;
+    margin-bottom: 50px;
+  }
+  /* About me and Message from Dad  Section*/
+  .sec-2 {
+    margin-top: -50px;
+    text-align: center;
+    overflow: hidden;
+  }
+  .main-section {
+    display: block;
+  }
+  .text-container {
+    display: block;
+    text-align: center;
+    width: 330px;
+    margin: auto;
+    margin-top: 30px;
+  }
+  .cont1 {
+    margin-top: 40px;
+    left: -110px;
+  }
+  .cont2 {
+    left: 115px;
+  }
+  .mg-4 {
+    left: 33px;
+    top: -220px;
+    transform: translateY(-0%) rotate(-30deg);
+  }
+  .animated-image2 {
+    width: 150px;
+    height: auto;
+    animation: changeFlowerColor2 4s infinite;
+  }
+  
+  @keyframes changeFlowerColor2 {
+    0% {
+      filter: hue-rotate(0deg);
+      transform: translateY(-0%) rotate(-220deg);
+    }
+    25% {
+      filter: hue-rotate(90deg);
+  
+    }
+    50% {
+      filter: hue-rotate(180deg);
+      transform: rotate(-240deg);
+    }
+    75% {
+      filter: hue-rotate(270deg);
+    }
+    100% {
+      filter: hue-rotate(360deg);
+      transform: rotate(-220deg);
+    }
+  }
+
+  .txt-1 {
+    margin: auto;
+    left: 0;
+    right: 0;
+    width: 300px;
+  }
+  .sec-6 {
+    margin-top: 120px;
+  }
+  .nav1,
+  .mg-2,
+  .mg-3,
+  .oval-container,
+  .rounded-container,
+  .sec-3-1,
+  .sec-4-1,
+  .sec-5 {
+    display: none;
+  }
+  .sec-7 {
+    display: block;
+  }
+  .sec-7 img {
+    display: block;
+    margin: auto;
+    width: 300px;
+    margin-bottom: -70px;
+  }
+  .sec-7-txt {
+    text-align: center;
+  }
+}
+
+/* Mobile Menu Hamburger*/
+@media (min-width: 467px) and (max-width: 1020px) {
+  .g-13,
+  .v-3,
+  .v-2, 
+  .g-11, 
+  .g-18,
+  .g-26,
+  .g-27, .Just-txt {
+    display: none;
+  }
+  .sec-1 {
+    width: 100%;
+  }
+  .container1 {
+    left: 800px;
+  }
+  .sec-11 {
+    top: 100px;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 30px;
+    /* height: 310px; */
+  }
+  .sec-11 h1 {
+    position: relative;
+    font-size: 25px;
+    z-index: 2;
+  }
+  .sec-11 p {
+    position: relative;
+    font-size: 20px;
+    z-index: 2;
+  }
+  .sec-12 {
+    display: none;
+  }
+  .cont2,
+  .cont1 {
+    display: none;
+  }
+  .sec-2 {
+    width: 600px;
+  }
+  .image-container img {
+    display: block;
+    margin: auto;
+  }
+  .sec-2 .text-container {
+    display: none;
+  }
+
+  .sec-3-1,
+  .sec-4,
+  .sec-4-1 {
+    display: none;
+  }
+  .sec-5 {
+    margin-bottom: 40px;
+  }
+  .sec-7 {
+    display: block;
+    text-align: center;
+  }
+  .sec-7-txt {
+    display: block;
+    text-align: center;
+  }
+}
