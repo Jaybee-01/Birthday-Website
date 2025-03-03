@@ -98,7 +98,104 @@ main {
   overflow: hidden;
   margin-top: 60px;
 }
+/* For the downloadable image */
+.image-container2 {
+  position: relative;
+  height: 430px;
+  width: 315px;
+}
+.image-container2 .hover-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0; /* Hidden by default */
+  transition: opacity 0.4s ease-in-out;
+}
+.image-container2:hover .hover-image {
+  opacity: 1;
+}
+/* img 3 */
+.image-container3 {
+  position: relative;
+  height: 204px;
+  width: 300px;
+}
 
+.image-container3 .hover-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0; /* Hidden by default */
+  transition: opacity 0.4s ease-in-out;
+}
+.image-container3:hover .hover-image {
+  opacity: 1;
+}
+/* img 4 */
+.image-container4 {
+  position: relative;
+  top: -230px;
+  right: -340px;
+  height: 204px;
+  width: 156px;
+}
+
+.image-container4 .hover-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0; /* Hidden by default */
+  transition: opacity 0.4s ease-in-out;
+}
+.image-container4:hover .hover-image {
+  opacity: 1;
+}
+/* img 5 */
+.image-container5 {
+  position: relative;
+  top: -200px;
+  height: 195px;
+  width: 515px;
+}
+
+.image-container5 .hover-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0; /* Hidden by default */
+  transition: opacity 0.4s ease-in-out;
+}
+.image-container5:hover .hover-image {
+  opacity: 1;
+}
+/* img 6 */
+.image-container6 {
+  position: relative;
+  left: 30px;
+  height: 436px;
+  width: 226px;
+}
+
+.image-container6 .hover-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0; /* Hidden by default */
+  transition: opacity 0.4s ease-in-out;
+}
+.image-container6:hover .hover-image {
+  opacity: 1;
+}
 /* Arrow lines */
 .g-13 {
   width: 200px;
@@ -333,7 +430,6 @@ span {
   }
   25% {
     filter: hue-rotate(90deg);
-
   }
   50% {
     filter: hue-rotate(180deg);
@@ -360,7 +456,6 @@ span {
   }
   25% {
     filter: hue-rotate(90deg);
-
   }
   50% {
     filter: hue-rotate(180deg);
@@ -374,7 +469,6 @@ span {
     transform: rotate(-160deg);
   }
 }
-
 
 .txt-1 {
   width: 350px;
@@ -446,7 +540,7 @@ span {
   border-radius: 10px;
 }
 
-.image-container img {
+.image-container1 img {
   width: 80%;
   height: auto;
   max-width: 450px;
@@ -543,12 +637,12 @@ span {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: -100px;
 }
 
 .sec-4-1 img {
   border: 5px solid #d0b0cf;
   border-radius: 30px;
-  margin: 10px;
   background-size: cover;
   object-fit: cover;
 }
@@ -693,8 +787,8 @@ footer {
 @media (max-width: 650px) {
   .g-13,
   .v-3,
-  .v-2, 
-  .g-11, 
+  .v-2,
+  .g-11,
   .g-18,
   .g-26,
   .g-27 {
@@ -741,7 +835,6 @@ footer {
     overflow: hidden;
     margin: auto;
     margin-top: -120px;
-
   }
   .sec-11 {
     text-align: center;
@@ -749,13 +842,13 @@ footer {
     width: 400px;
     height: 750px;
   }
-  .sec-11 h1{
+  .sec-11 h1 {
     text-align: center;
     margin: auto;
     font-size: 30px;
     max-width: 300px;
   }
-  .sec-11 p{
+  .sec-11 p {
     text-align: center;
     margin: auto;
     font-size: 30px;
@@ -810,7 +903,7 @@ footer {
     height: auto;
     animation: changeFlowerColor2 4s infinite;
   }
-  
+
   @keyframes changeFlowerColor2 {
     0% {
       filter: hue-rotate(0deg);
@@ -818,7 +911,6 @@ footer {
     }
     25% {
       filter: hue-rotate(90deg);
-  
     }
     50% {
       filter: hue-rotate(180deg);
@@ -870,11 +962,12 @@ footer {
 @media (min-width: 467px) and (max-width: 1020px) {
   .g-13,
   .v-3,
-  .v-2, 
-  .g-11, 
+  .v-2,
+  .g-11,
   .g-18,
   .g-26,
-  .g-27, .Just-txt {
+  .g-27,
+  .Just-txt {
     display: none;
   }
   .sec-1 {
